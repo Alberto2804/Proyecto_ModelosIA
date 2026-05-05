@@ -15,6 +15,9 @@ Este repositorio contiene el desarrollo práctico de dos modelos predictivos de 
 **Dataset:** *Heart Disease Dataset* (Kaggle). Contiene 14 variables clínicas reales de pacientes, incluyendo tipo de dolor de pecho, nivel de colesterol, electrocardiogramas en reposo y frecuencia cardíaca máxima.  
 **Enfoque:** Tras iteraciones iniciales con otros conjuntos de datos clínicos que presentaban ruido excesivo, se optó por un enfoque *Data-Centric*. Se implementó un modelo `RandomForestClassifier` sobre este dataset enriquecido, logrando un **Accuracy y F1-Score superiores al 98%**. Se utilizó **SHAP** para explicabilidad global y **LIME** para auditorías locales de pacientes individuales.
 
+<img width="257" height="67" alt="image" src="https://github.com/user-attachments/assets/3c73beff-41a8-44ec-8030-b887b5ec9208" />
+
+
 ### Resultados y Explicabilidad (XAI)
 El uso combinado de herramientas XAI nos permite auditar el modelo a dos niveles:
 
@@ -34,6 +37,9 @@ El uso combinado de herramientas XAI nos permite auditar el modelo a dos niveles
 **Objetivo:** Predecir el coste exacto anual de la factura médica de una persona basándonos en sus características físicas y estilo de vida.  
 **Dataset:** *Medical Cost Personal Dataset* (Kaggle). Incluye edad, sexo, IMC, cantidad de hijos, región y estado de fumador.  
 **Enfoque:** Se implementó un modelo **`RandomForestRegressor`** capaz de predecir valores continuos. El modelo demostró un alto rendimiento con un **R² superior a 0.86**, logrando un Error Absoluto Medio (MAE) altamente competitivo dada la falta de dimensionalidad médica oculta (días de ingreso, tipo de cirugía, etc.). Posteriormente, se aplicó **SHAP** para cuantificar el impacto económico de cada variable.
+
+<img width="263" height="43" alt="image" src="https://github.com/user-attachments/assets/e2f60ff3-9416-4ab8-9431-67e4a371b296" />
+
 
 ### Resultados y Explicabilidad (XAI)
 El análisis de impacto de SHAP nos muestra cómo cada factor empuja el precio de la factura hacia arriba o hacia abajo:
